@@ -1,4 +1,4 @@
-#! /usr/bin/perl
+#!/usr/bin/env perl
  
 while ($line = <>){
     if (($line !~  /BEGIN TRANSACTION/) && ($line !~ /COMMIT/) && ($line !~ /sqlite_sequence/) && ($line !~ /CREATE UNIQUE INDEX/) && ($line !~ /PRAGMA foreign_keys=OFF/)){
