@@ -8,13 +8,13 @@ Best used when put in the user's home dir. Example:
 ```
 cp sqlite-to-mariadb.pl ~
 chmod +x ~/sqlite-to-mariadb.pl
-~/sqlite-to-mariadb.pl MyDBName.sqlite.sql > MyDBName.mariadb.sql
+perl sqlite-to-mariadb.pl MyDBName.sqlite.sql > MyDBName.mariadb.sql
 ```
 
 Example scenario:
 ```
 sqlite3 YourDBName.sqlitedb .dump > YourDBName.sqlite.sql
-~/sqlite-to-mariadb.pl YourDBName.sqlite.sql > YourDBName.mariadb.sql
+perl sqlite-to-mariadb.pl YourDBName.sqlite.sql > YourDBName.mariadb.sql
 mysql -uUSER -pPASSWORD YourDBName < YourDBName.mariadb.sql
 ```
 
