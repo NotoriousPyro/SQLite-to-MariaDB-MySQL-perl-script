@@ -6,8 +6,8 @@ Usage:`perl sqlite-to-mariadb.pl [INPUT FILE] > [OUTPUT FILE]`
 
 Best used when put in the user's home dir. Example:
 ```
-cp sqlite-to-mariadb.pl ~
-chmod +x ~/sqlite-to-mariadb.pl
+wget https://raw.githubusercontent.com/NotoriousPyro/SQLite-to-MariaDB-MySQL-perl-script/master/sqlite-to-mariadb.pl
+chmod +x sqlite-to-mariadb.pl
 perl sqlite-to-mariadb.pl MyDBName.sqlite.sql > MyDBName.mariadb.sql
 ```
 
