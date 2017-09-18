@@ -14,6 +14,7 @@ while ($line = <>){
                 $line = "INSERT INTO $1$2\n";
                 $line =~ s/\"/\\\"/g;
                 $line =~ s/\"/\'/g;
+                $line =~ s/\\/\//g;
         }else{
                 $line =~ s/\'\'/\\\'/g;
         }
